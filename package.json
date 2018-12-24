@@ -1,0 +1,32 @@
+{
+    "name": "magnetoml",
+    "version": "1.0.0",
+    "description": "Deteccion de Mutantes",
+    "main": "server.js",
+    "scripts": {
+        "test": "nyc mocha --timeout 5000"
+    },
+    "author": "Damian Ariel Gonzalez",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^2.6.1",
+        "body-parser": "^1.18.3",
+        "config": "^3.0.1",
+        "cors": "^2.8.5",
+        "dotenv": "^6.2.0",
+        "express": "^4.16.4",
+        "helmet": "^3.15.0",
+        "log4js": "^3.0.6",
+        "mongojs": "^2.6.0"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^5.2.0",
+        "nyc": "^13.1.0",
+        "supertest": "^3.3.0"
+    },
+    "engines": {
+        "node": "8.12.0",
+        "npm": "6.4.1"
+    }
+}

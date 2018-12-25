@@ -34,7 +34,7 @@ module.exports = {
         let statsInfo = "SIN DATOS";
         try {
             let response = await db.getStats();
-            if (response) {
+            if (response.length > 0) {
                 statsInfo = parseResponse(response);
             }
             genericResponse(res, "STATS", 200, statsInfo);

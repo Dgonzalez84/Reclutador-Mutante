@@ -4,6 +4,7 @@
     "description": "Deteccion de Mutantes",
     "main": "server.js",
     "scripts": {
+        "start": "forever start --minUptime 5000 -o out.log -e err.log server.js",
         "test": "nyc mocha --timeout 5000"
     },
     "author": "Damian Ariel Gonzalez",

@@ -9,6 +9,12 @@
 ## API
 
 #### Consta de dos servicios:
+
+    * SERVER: ec2-3-85-56-18.compute-1.amazonaws.com
+    * ENRUTADOR: NGINX
+    * LLAMADO: 
+        http://ec2-3-85-56-18.compute-1.amazonaws.com/stats (GET)
+        http://ec2-3-85-56-18.compute-1.amazonaws.com/mutant (POST)
     
 1. **POST /mutant** -- Encargado de verificar si un DNA es mutante o no, de acuerdo a diferentes paramentros. 
     * Contiene validaciones extra para filtrar matices NxN y con datos validos.
@@ -64,7 +70,7 @@ Se creo una structura para que todas las respuestas complan con tal formato a la
 
 ## Opciones al levantar el sevidor con npm:
 
-|   Comando   |  Linea que ejecuta en terminal                 |
-|-------------|------------------------------------------------|    
-| npm start   |  forever node server.js                        |
-| npm test    |  node server.js                                |
+|   Comando   |  Linea que ejecuta en terminal                                        |
+|-------------|-----------------------------------------------------------------------|    
+| npm start   |  forever start --minUptime 5000 -o out.log -e err.log server.js       |
+| npm test    |  node server.js                                                       |

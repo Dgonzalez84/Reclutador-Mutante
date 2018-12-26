@@ -50,7 +50,7 @@ Se creo una structura para que todas las respuestas complan con tal formato a la
 
 ## Testeo
 
-1. La aplicacion posee test automaticos que verifican el comportamiento de cada servicio generado. El cual genera un informe final de convertura como el siguiente ejemplo:
+1. La aplicacion posee test automaticos que verifican el comportamiento de cada servicio generado. El cual genera un informe final de covertura como el siguiente ejemplo:
 
 |File                      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 |--------------------------|----------|----------|----------|----------|-------------------|
